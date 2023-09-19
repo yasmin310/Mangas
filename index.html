@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet"><!--comando importado do google-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    
+    <title>Loja</title>
+</head>
+<body>
+    <header class="cabeçalho"><!--usado esta tag (header) por que ela é semântica o que traz sentido ao sistema-->
+        <div class="container" >
+            <input type="checkbox" id="menu" class="container__botao"><!--usando tag (input), implica ao usuario neste processo é para ele interagir -->
+            <label for="menu"><!--esta tag(label) é para associar todo o sistema atraves do (id)-->
+                <span class="cabeçalho__menu-quadriculas container__imagem"></span><!--usado a tag (span) para que a imagem seja trocada a cor ja que este sistema não java.-->
+            </label>
+            <ul class="lista-menu">
+            <li type="circle" class="lista-menu__titulo">Mangás</li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-1">Romance</a></li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-2">Terror</a></li>
+            <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-3">Aventura</a></li>
+            <h2 class="container__titulo"><b class="container__titulo--negrito">Leia</b>Mangás</h2>
+            </ul>
+                <img src="imagens mangá/book.png" alt="Logo do Site" class="container__imagem"><!--esta tag (a) foi usada para colocar a imagem no sistema-->
+                <h2 class="container__titulo"><b class="container__titulo--negrito">Leia</b>Mangás</h2>
+        </div>
+            <ul class="opções">
+            <input type="checkbox" id="opções-menu"class="opções__botão"><!--usando este 
+            comando podemos demonstrar um direcionamento para chegar em algum sistema
+            a (checkbox) coloca uma caixa e deixa para marcar ja (id) faz o direcionamento-->
+            <label for="opções-menu"><!--ja neste comando (label e ele faz a referencia)
+            o que indica que o menu esta nele como esta escrito e a caixa sera marcada-->
+                <ul class="opções__item">Mangás</ul>
+            </label><!--ja nota-se que agora a caregorias sera marcada por que ela sera 
+            marcada para abrir então quando fazer isso tudo que estiver dentro do (label)
+            sera marcada realize isso no navegador e olhe aparecera uma caixa que pode ser 
+            clicada e nela vai ter um sinal de v-->
+                    <ul class="lista-menu">
+                    <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-1">Terror</a></ul>
+                    <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-2">Romance</a></ul>
+                    <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-3">Aventura</a></ul>
+                </ul>
+            <ul class="opções__item"><a href="#" class="opções__link">Mais vendido</a></ul>
+            <ul class="opções__item"><a href="#" class="opções__link">Lançamentos</a></ul>
+        </ul>
+            <div class="container">
+                <a href="#" class="container__link"><img src="imagens mangá/favoritos.png" alt="meus favoritos" class="container__imagem-1"></a><!--esta tag e as demais para colocar as ancoras ou seja os link de direcionamento-->
+                <a href="#" class="container__link"><img src="imagens mangá/carrinho.png" alt="minhas compras" class="container__imagem"></a>
+                <p class="container__texto">Promoções</p>
+                <a href="#email"><img src="imagens mangá/email.png" alt="email" class="container__imagem"></a>
+                <p class="container__texto">Enviar e-mail</p>
+            </div>
+    </header>
+    </section>
+    <section class="banner">
+        <!--nova seção ou seja um novo ambiente-->
+        <h2 class="banner__titulo">Aqui você pode encontrar o mangá ideal</h2>
+        <input type="search" class="banner__pesquisa" placeholder="procure aqui o que você deseja">
+        <!--foi usado o (input) indicativo ao usuaro em uma 
+        de suas definição depois foi colocado a comando (placeholder)
+        o que indica ao usuraio que o que deve
+        fazer na base ou seja a mensagem de indicação.-->
+    </section>
+    <section class="carrossel" >
+        <h2 class="carrossel__titulo"> Confira</h2>
+        <div class="swiper"><!--comando usado para agregar mudança de tela-->
+        <div class="swiper-pagination"></div><!--comando para fazer a pagina-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="edite-1" src="imagens mangá/agora.png"alt="Livro-1"></div>
+            <div class="swiper-slide"><img class="edite-2" src="imagens mangá/vai.png"alt="Livro-2"></div>
+            <div class="swiper-slide"><img class="edite-3" src="imagens mangá/voz do.png"alt="Livro-3"></div>
+            <div class="swiper-slide"><img class="edite-3" src="imagens mangá/bunny.png"alt="Livro-3"></div>
+            <div class="swiper-slide"><img class="edite-3" src="imagens mangá/demon.png"alt="Livro-3"></div>
+            <div class="swiper-slide"><img class="edite-3" src="imagens mangá/jujutsu.png"alt="Livro-3"></div>
+            <div class="swiper-slide"><img class="edite-3" src="imagens mangá/elite.png"alt="Livro-3"></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div><!--comando para avançar a pagina-->
+        <div class="swiper-button-next"></div><!--comando para retornar a pagina-->                                   
+        </div>
+    <div class="card">
+        <!--primeira linha-->
+        <div class="card_descrição">
+            <!--primeira coluna-->
+            <div class="descrição">
+                <h3 class="descrição__titulo">Mais recomendado</h3>
+                <h2 class="descrição__titulo-livro">One piece vol.1</h2>
+                <p class="descrição__texto">Avaliações 10/10</p>
+            </div>
+            <!--segunda coluna-->
+            <img src="imagens mangá/one piece 2.png" class="descrição__imagem" alt="Cartão">
+        </div>
+        <!--segunda linha-->
+        <div class="card__botões">
+            <ul class="botões">
+                <a href="https://www.instagram.com/mangasbrasil/" class="fa fa-instagram"></a>
+                <a href="https://www.instagram.com/sitemangas/" class="fa fa-instagram"></a>
+            </ul>
+            <!--segunda linha-->
+            <a href="https://mangaplus.shueisha.co.jp/manga_list/all" class="botões__ancora">Saiba mais</a>
+        </div>
+    </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulos">Acesse</h2> <!--Este (h2) é o titulo principal da
+         seção e não da pagina não confundir a diferença da pagina e da seção-->
+        <ul class="topicos__listas">
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Akame ga Kill!</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Akatsuki no Yona</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Jujutsu Kaisen</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Classroom Of The Elite</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Demon Slayer</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link"> A voz do Silêncio</a> 
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">Bunny Girl</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link"> One piece</a>
+            </ul>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Mais novidades a caminho</h2>
+            <p class="contato__texto">Entre em um universo de mangás</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" id="email">
+    </section>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">
+        </h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__título">Mais</li>
+            <li class="lista-radape__itens">
+                <img src="imagens mangá/baixar.png" alt="book">
+                <a href="#" class="lista-rodape__link">Baixar</a>
+            </li>
+            <li class="lista-radape__itens">
+                <img src="imagens mangá/cora.png" alt="bookmark">
+                <a href="#" class="lista-rodape__link">Favoritos</a>
+
+            </li>
+            <li class="lista-radape__itens">
+                <img src="imagens mangá/estrela.png" alt="twitter">
+                <a href="#" class="lista-rodape__link">Destaque</a>
+            </li>
+
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__título">Comunicação</li>
+            <li class="lista-radape__itens">
+                <img src="imagens mangá/twt.png" alt="document">
+                <a href="#" class="lista-rodape__link">Twitter</a>
+            </li>
+            <li class="lista-radape__itens">
+                <img src="imagens mangá/sino certo.png" alt="OK">
+                    <a href="#" class="lista-rodape__link">Novidades</a>
+</script> 
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper',{
+            spaceBetween: 10,
+            slidesPerView: 2, 
+            pagination: {
+                el:'.swiper-pagination',
+                type:'bullets',
+            },
+            });
+        </script>
+</body>
+</html>
+

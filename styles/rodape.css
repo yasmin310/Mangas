@@ -1,0 +1,25 @@
+.rodape{
+    display: none;
+}
+/* usado este comando no rodape para que ele desapareça quando colocado na resolução baixa
+e não precisa colocar (display:block) dento do (@media) por ele vai aparecer no tamanho.*/
+@media screen and (min-width:808px){
+        .rodape{
+            display: flex;
+            justify-content: space-around;
+        }
+        .lista-rodape__titulo{
+            padding: 1em;
+        }
+        .lista-rodape__link{
+            text-decoration: none;
+            font-size: 18px;
+            }
+        .lista-radape__itens{
+            align-items: center;
+        }
+        .rodape__titulo{
+            color: var(--cor-do-menu-fundo);
+        }
+}
+    
